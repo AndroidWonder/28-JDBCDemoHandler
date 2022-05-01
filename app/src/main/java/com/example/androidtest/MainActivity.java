@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import java.sql.*;
 
 public class MainActivity extends Activity {
-	
 
 	private TextView texted = null;
 	private Thread t = null;
@@ -43,7 +42,6 @@ public class MainActivity extends Activity {
 		t.start();
 		
 	}
-	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,16 +54,8 @@ public class MainActivity extends Activity {
 	private Runnable background = new Runnable() {
 		public void run(){
 			String URL = "jdbc:mysql://frodo.bentley.edu:3306/test";
-	        String username = "CS280";
-	        String password = "CS280";
-
-	        try { //load driver into VM memory
-	        	Class.forName("com.mysql.jdbc.Driver");
-	        } catch (ClassNotFoundException e) {
-	            Log.e("JDBC", "Did not load driver");
-	          
-	        }
-
+	        String username = "harry";
+	        String password = "harry";
 
 	        try //create connection and statement objects
 				( //resources part
